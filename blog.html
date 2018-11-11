@@ -2,7 +2,7 @@
 layout: default
 Title: Blog
 banner-heading: Blog
-banner-image: img/136.jpg
+banner-image: img/sunrise.jpg
 ---
 <section>
   <h1> Recent Posts </h1>
@@ -12,7 +12,7 @@ banner-image: img/136.jpg
     {% for post in site.posts %}
       <div class="post-preview col-3">
         <h3> {{post.title}} </h3>
-        <img src="{{post.featured-image}}"/>
+        <img src="{{post.featured_image}}"/>
         <p> {{post.description}} </p>
         <p> {{post.author}}</p>
         <p> {{post.date | date_to_long_string }}</p>

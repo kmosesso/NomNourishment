@@ -355,6 +355,38 @@ h4{
   background-size: cover;
   background-position: center;
 }
+/* SERVICES CSS */
+.coach h1{
+  font-size:3rem;
+  text-align:center;
+}
+.coach h2{
+  font-size:1.5rem;
+  text-align:center
+}
+.coach h3{
+  font-size:1rem;
+  text-align:center;
+}
+.coach{
+  padding-left:5%;
+  padding-right:5%;
+  background-color:#b5b2b2;
+  background-position:center;
+  background-size:cover;
+}
+.coaching p{
+  line-height:1em;
+  background-color:#b5b2b2;
+  background-position:center;
+  background-size:cover;
+}
+.coaching{
+  background-image:url(img/spring-rolls.jpg);
+  background-size:cover;
+  background-position:center;
+  background-color:#b5b2b2;
+}
 /*BLOG CSS*/
 
 .date{

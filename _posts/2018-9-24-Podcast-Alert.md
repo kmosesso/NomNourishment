@@ -2,7 +2,7 @@
 layout: post
 title: Podcast Alert
 description: Hey guys! A few weeks ago I had the opportunity to sit down with Sean Tierney, founder of Nomad Prep, and answer his questions about how to stay healthy on the road and the importance of choosing nourishing, whole, plant-based foods in general.  
-featured-image: https://static1.squarespace.com/static/57b9015bd1758e022c2f11a4/t/5ba99bc8f9619a770c1ac930/1537842130707/nomad+podcast.JPG?format=1500w
+featured_image: https://static1.squarespace.com/static/57b9015bd1758e022c2f11a4/t/5ba99bc8f9619a770c1ac930/1537842130707/nomad+podcast.JPG?format=1500w
 author: Kara Mosesso
 banner-heading: Podcast Alert
 ---

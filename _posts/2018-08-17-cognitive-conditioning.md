@@ -2,7 +2,7 @@
 layout: post
 title: Cognitive Conditioning
 description: Welcome to the FINAL installment (6/6) in my brain health series! In my first post, I explained that lifestyle choices can prevent up to 90% of Alzheimer's cases.  For the 10% of cases that can't be prevented due to very strong genetic risk (such as in those that carry the APOE4 gene), lifestyle changes can delay presentation or progression of the disease by up to 15 years.
-featured-image: https://static1.squarespace.com/static/57b9015bd1758e022c2f11a4/t/5b6f767b21c67c133d08d4d3/1534031501695/Botero?format=1500w
+featured_image: https://static1.squarespace.com/static/57b9015bd1758e022c2f11a4/t/5b6f767b21c67c133d08d4d3/1534031501695/Botero?format=1500w
 banner-heading: Cognitive Conditioning
 ---
 
