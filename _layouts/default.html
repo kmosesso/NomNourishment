@@ -3,7 +3,7 @@
 <head>
   <!-- This is the head of my HTML.  This is where we include all the links to CSS files, google fonts, SEO, meta data -->
 
-  <title>Nomadic Nourishment</title>
+  <title>{{page.title}}</title>
 
   <!-- -- --THIS IS THE START OF MY CSS FILES -- -- -->
 
@@ -27,24 +27,29 @@
 <body>
 
 <!-- -- -- -- -- -- THIS IS MY HEADER -- -- -- -- -- -->
-<header class="bg-img">
-
+<header style="background-image:url('{{page.banner-image}}');background-size:{{page.background-size}}')">
+    <h1> {{page.banner-heading}}</h1>
+  <!-- <img src="{{page.banner-image}}"/> -->
 
 </header>
 
 <div class="name-logo">
   <h1> Nomadic </h1>
   <h1> Nourishment </h1>
-<!-- rotate -->
 </div>
-
-  <div class="menu-nav">
-    <a href= "<!--link to menu page -->">
-      <img src= "./img/pineapple.png">
+<nav>
+  <div class="menu-button">
+    <img src= "./img/pineapple.png">
       <h3> Menu </h3>
-    </a>
   </div>
-  <!-- Pineapple Icon placeholder for menu  navigation -->
+  <div class="menu-nav">
+    <a href="http://127.0.0.1:4000/index.html">Home</a>
+    <a href="http://127.0.0.1:4000/bio.html">About Kara</a>
+    <a href="http://127.0.0.1:4000/services.html">Work with Kara</a>
+    <a href="http://127.0.0.1:4000/praise.html">Praise</a>
+    <a href="http://127.0.0.1:4000/blog.html">Blog</a>
+  </div>
+</nav>
 
 
 {{ content }}
@@ -52,9 +57,9 @@
 <!-- THIS IS THE FOOTER -->
 <footer>
 
-<section class="grid contact-info">
+<section class="grid footer">
 
-  <div class="col-4_xs-12">
+  <div class="col-4_xs-12 form">
     <!-- Begin Mailchimp Signup Form -->
       <div id="mc_embed_signup">
       <form action="https://nomadicnourishment.us2.list-manage.com/subscribe/post?u=45c04a81ad886b36e91124b36&amp;id=ba815d5fb6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -77,12 +82,12 @@
   <!--End mc_embed_signup-->
   </div>
 
-  <div class="col-4_xs-12">
-    <h3> kara@nomadicnourishment.com</h3>
-    <h3> 1-508-566-4647</h3>
+  <div class="col-4_xs-12 contact-info">
+    <p> kara@nomadicnourishment.com</p>
+    <p> 1-508-566-4647</p>
   </div>
 
-  <div class="col-4_xs-12">
+  <div class="col-4_xs-12 social-icons">
     <nav>
       <a href="https://www.facebook.com/kara.mosesso">
         <i class="fab fa-facebook-square"></i></a>
@@ -95,5 +100,15 @@
 </section>
 
 </footer>
+
+<!--JQUERY -->
+
+<script src="jquery.js">
+</script>
+<script src="main.js"></script>
+
 </body>
+
+
+
 </html>

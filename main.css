@@ -44,11 +44,18 @@ img {
 
 .mob-show { display: none;}
 
-.bg-img {
+.background-image {
+  background-attachment:fixed;
+}
+header {
   background-color: grey;
   background-size: cover;
-  background-position: center;
   padding:30%;
+  background-attachment: fixed;
+  background-position:center;
+  font-size: 3rem;
+  text-align:center;
+  min-height:50vh;
 }
 
 /* ----- UNIVERSAL STYLES --------------------------- */
@@ -69,32 +76,32 @@ img {
 
 section {
   padding: 10vh 5%;
+  background-color: #fdfdfd;
 }
 
 body {
   font-family:'raleway';
   color: rgb(60,60,65);
-  /* border: 1px solid black */
 }
+
 h1, h2, h3, h4 {
   text-transform: uppercase;
   color: black;
   font-weight: 700;
   margin-bottom: 0.5em;
 }
-h1 {
-  /* font-size: 7vw; */
-  /* line-height: 0.9em; */
-}
+
 h2 {
   font-size: 2em;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 h3 {
   font-size: 1.5em;
 }
 
 .col, [class*=col-] {
-  padding: 3%;
+  /* padding: 3%; */
 }
 
 .fa {
@@ -103,31 +110,38 @@ h3 {
   color: #1abc9c; /* featured-color */
 }
 
-section {
-  /* border: 1px solid black; */
+p{
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 3%;
   padding-bottom: 3%;
-  background-color: #fdfdfd
+}
+
+h4{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  line-height:2.5em;
 }
 
 .button{
   text-align:center;
   border: 2px solid black;
-  width:100px;
+  width:150px;
   background-color:#e0edf7;
   color:black;
+  display:block;
+  margin:auto;
+  padding:3%;
 }
-
 
 /*    HEADER CSS     */
 
-header {
-  background-image: url(img/kara.jpg);
-  background-position: 50% 20% !important;
-  background-attachment:fixed;
-}
+
+
+
+
 
 
 .name-logo h1 {
@@ -145,7 +159,7 @@ header {
   left:-120px;
   position:fixed;
 }
-.menu-nav{
+.menu-button{
   max-width:100px;
   max-height:150px;
   font-size:0.5rem;
@@ -153,17 +167,205 @@ header {
   top: 15px;
   right:6px;
   position: fixed;
+  z-index:10;
 }
+
+.menu-nav{
+  display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+}
+.menu-nav a{
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 80px;
+  font-weight: 300;
+  color: #b5b2b2;
+  font-family: 'raleway', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+.menu-nav li{list-style:none}
 
 /*END OF HEADER CSS */
 
 
 /* START OF CSS FOR SECTION 2*/
+.sec-2{
+  background-color: #b5b2b2;
+  background-size: cover;
+  background-position: center;
+  text-align:center;
+}
+
 /* END OF CSS FOR SECTION 2 */
 
 /*START OF CSS FOR SECTION 3*/
+.bio-photo{
+  background-image:url(img/swimming.jpg);
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+}
+
+.col-6_sm-12{
+  padding:3%;
+  margin-right:-2rem;
+}
 
 /*END OF CSS FOR SECTION 3 */
+/* START OF CSS FOR SECTION 4*/
+ .service-coach{
+  background-color: #b5b2b2;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.button2{
+  text-align:center;
+  border: 2px solid black;
+  width:280px;
+  min-height:120px;
+  background-color:#e0edf7;
+  color:black;
+  display:flex;
+  margin:auto;
+  padding:3%;
+  justify-content:center;
+  align-items:center;
+}
+.blog{
+  background-color:grey;
+  background-image: url(img/yogakili.jpg);
+  background-position: center;
+  background-attachment:fixed;
+  padding-bottom:50%;
+  margin:auto;
+  background-size:cover;
+  opacity:0.6;
+  display:flex;
+}
+.button3 {
+  text-align:center;
+  border: 2px solid black;
+  width:200px;
+  min-height:100px;
+  background-color:#e0edf7;
+  color:black;
+  display:flex;
+  margin:auto;
+  justify-content:center;
+  align-items: center;
+  margin-top:30%;
+  margin-left:43%;
 
+}
+.button:hover {
+  background-color: #bec6cc;
+  border-color: black;
+  /* color: #333 */
+}
+.button2:hover {
+  background-color: #bec6cc;
+  border-color: #black;
+  /* color: #333 */
+}
+.button3:hover {
+  background-color: #bec6cc;
+  border-color: #black;
+  /* color: #333 */
+}
 
-/* END HEADER CSS */
+/*footer css*/
+.footer{
+  background-color: #b5b2b2;
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.form{
+  padding-left:5%;
+  text-align:center;
+}
+.form button{
+  padding-top:3%;
+}
+.mc-field-group{
+  padding:3%;
+}
+.contact-info p{
+  font-size:1rem;
+  line-height:0.2em;
+  background-color: #b5b2b2;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.contact-info button{
+  padding:3%;
+}
+.social-icons{
+  font-size:2rem;
+  background-color: #b5b2b2;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+/* BIO PAGE CSS*/
+.certifications h2{
+  font-size:1rem;
+  text-align:center;
+  font-style:bold;
+}
+.certifications h4{
+  font-size:0.8rem;
+  text-align:center;
+  line-height:1.2em;
+}
+.certifications{
+  padding-left:5%;
+  padding-right:5%
+}
+.bio-photo2{
+  background-image: url(img/avocado-hat.jpg);
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+  min-height:40vh;
+  border:2rem solid #fdfdfd;
+}
+.about-me p{
+  padding-top:0;
+  padding-bottom:0;
+}
+.about-me{
+  background-color: #b5b2b2;
+  background-size: cover;
+  background-position: center;
+}
+/*BLOG CSS*/
+
+.date{
+  font-size:10px;
+}
+.grid{
+  display: flex;
+}
+.main-body{
+  width:60%;
+}
+.sidebar{
+  width:30%;
+}
