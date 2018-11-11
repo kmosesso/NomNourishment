@@ -16,7 +16,7 @@ banner-image: img/136.jpg
         <p> {{post.description}} </p>
         <p> {{post.author}}</p>
         <p> {{post.date | date_to_long_string }}</p>
-        <a href="post.url">Read More</a>
+        <a href="{{post.url}}">Read More</a>
       </div>
     {% endfor %}
   </div>
