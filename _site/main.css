@@ -366,15 +366,15 @@ h4{
   background-position: center;
 }
 /* SERVICES CSS */
-.coach h1{
+.coach h1, .speaking-writing h1,.web-development h1{
   font-size:3rem;
   text-align:center;
 }
-.coach h2{
+.coach h2,.speaking-writing h2,.web-development h2{
   font-size:1.5rem;
   text-align:center
 }
-.coach h3{
+.coach h3,.speaking-writing h2,.web-development h2{
   font-size:1rem;
   text-align:center;
 }
@@ -396,6 +396,36 @@ h4{
   background-position:center;
   background-color:#b5b2b2;
 }
+span.highlight{
+  border: 2px solid black;
+  padding:5%;
+  font-size:2rem;
+}
+.program-options{
+  text-align:center;
+}
+/* .program-options-photo{
+  background-image:url(img/torres-del-paine.jpg);
+  background-size:cover;
+  background-position:center;
+  opacity:0.6;
+  background-attachment:fixed;
+} */
+.speaking-writing{
+  text-align:center;
+  background-color:#b5b2b2;
+  background-size:cover;
+  background-position:center;
+}
+
+h4.button{
+  width:200px;
+}
+
+.web-development{
+  text-align:center;
+}
+
 
 /*TESTIMONIAL SLIDER CSS*/
 
@@ -502,7 +532,41 @@ height: 30px;
 display: table;
 width: 100%;
 }
-
+/*TESTIMONIAL PAGE CSS*/
+.testimonial{
+  text-align:center;
+}
+.testimonial-bg{
+  text-align:center;
+  background-color:#b5b2b2;
+  background-size:cover;
+}
+.testimonial-photo1{
+  background-image:url(img/Runrevel.jpg);
+  background-size:cover;
+  background-position:center;
+  min-height:100vh;
+  background-attachment:fixed;
+  opacity:0.6;
+}
+.testimonial-photo2{
+  background-image:url(img/hummus-platter.jpg);
+  background-size:cover;
+  background-position:center;
+  min-height:100vh;
+  background-attachment:fixed;
+  opacity:0.6;
+}
+.testimonal-bg-photo3{
+  background-image:url(img/buying-mango.jpg);
+  background-size:cover;
+  background-position:center;
+}
+.testimonal-bg-photo4{
+  background-image:url(img/hiking-bulgaria.jpg);
+  background-size:cover;
+  background-position:center;
+}
 /*BLOG CSS*/
 
 .date{
