@@ -164,7 +164,7 @@ h4{
 }
 
 .name-logo{
-  top:-2%;
+  top:-6%;
   left:-12%;
   position:fixed;
 }
@@ -224,11 +224,12 @@ h4{
 }
 .bio-photo{
   background-image:url(img/swimming.jpg);
-  background-color: grey;
+  /* background-color: grey; */
   background-size: cover;
   background-position: center;
   min-height:40vh;
   border:2rem solid #fdfdfd;
+  margin:auto;
 }
 
 .col-6_sm-12{
@@ -351,7 +352,7 @@ h4{
 }
 .bio-photo2{
   background-image: url(img/avocado-hat.jpg);
-  background-color: grey;
+  /* background-color: grey; */
   background-size: cover;
   background-position: center;
   min-height:40vh;
@@ -594,24 +595,64 @@ section .overlay{
   background-position:center;
 }
 /* MEDIA QUERIES */
-@media(max-width:1024px){
-
+@media(max-width:1084px){
+.banner-heading h1{
+  font-size:2rem;
+}
+.menu-button{
+  max-width:90px;
+  max-height:140px;
+  font-size:0.5rem;}
+.name-logo{
+    top:-3%;
+    left:-12%;
+  }
+  .button2{
+    width:265px;
+  }
 }/*end media query*/
+
 @media(max-width:800px){
-  .header h1{
+  .banner-heading h1{
     font-size:1.5rem;
   }
   .name-logo{
-    top:6%;
+    top:-1%;
+    left:-10%;
+  }
+  .name-logo h1 {
+    font-size: 1.3rem;
+    line-height:0.4em;
+    padding-top:20%;
+  }
+  .name-logo{
+    top:-2%;
+    left:-12%;
+  }
+  .menu-button{
+    max-width:90px;
+    max-height:140px;
+    font-size:0.5rem;}
+} /*end media query*/
+
+@media(max-width:600px){
+  .banner-heading h1{
+    font-size:1.2rem;
+  }
+  .name-logo{
+    top:5%;
     left:-15%;
   }
-  .name-logo h1{
-    font-size:1rem;
+  .name-logo h1 {
+    font-size: 1.2rem;
+    line-height:0.4em;
+    padding-top:20%;
   }
+  .menu-button{
+    max-width:80px;
+    max-height:130px;
+    font-size:0.5rem;}
 } /*end media query*/
-@media(max-width:600px){
-  .banner-heading{
-    font-size:1rem;
   }/*end media query*/
   .mob-hide/*mobile hide */{
     display:none;
