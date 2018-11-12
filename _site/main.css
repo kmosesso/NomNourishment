@@ -50,12 +50,20 @@ img {
 header {
   background-color: grey;
   background-size: cover;
-  padding:30%;
   background-attachment: fixed;
   background-position:center;
   font-size: 3rem;
   text-align:center;
   min-height:50vh;
+}
+
+header .overlay {
+  padding: 30%;
+  background-color:rgba(255,255,255,0.6);
+}
+
+header.padding-30 {
+  padding: 30%;
 }
 
 /* ----- UNIVERSAL STYLES --------------------------- */
@@ -138,7 +146,9 @@ h4{
 
 /*    HEADER CSS     */
 
-
+.banner-opacity{
+  background: rgba(255,255,255,0.4);
+}
 
 
 
@@ -371,7 +381,7 @@ h4{
 .coach,.coaching{
   padding-left:5%;
   padding-right:5%;
-  background-color:#b5b2b2;
+  background-color:##fdfdfd;
   background-position:center;
   background-size:cover;
 }

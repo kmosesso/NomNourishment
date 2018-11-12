@@ -27,10 +27,19 @@
 <body>
 
 <!-- -- -- -- -- -- THIS IS MY HEADER -- -- -- -- -- -->
-<header style="background-image:url('{{page.banner-image}}');background-size:{{page.background-size}}')">
-    <h1> {{page.banner-heading}}</h1>
-  <!-- <img src="{{page.banner-image}}"/> -->
-
+<header class="grid
+  {% if page.title == "Home Page | Nomadic Nourishment" %}
+    padding-30
+  {% endif %}
+  " style="background-image:url('{{page.banner-image}}');">
+  {% unless page.title == "Home Page | Nomadic Nourishment" %}
+  <div class="overlay col-12">
+  {% endunless %}
+      <h1> {{page.banner-heading}}</h1>
+      <!-- <img src="{{page.banner-image}}"/> -->
+  {% unless page.title == "Home Page | Nomadic Nourishment" %}
+    </div>
+  {% endunless %}
 </header>
 
 <div class="name-logo">
