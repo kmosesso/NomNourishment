@@ -17,13 +17,17 @@ Website Colours: List colour hex codes here for reference
  /*    CSS RESET    */
 
 *{
-  margin=0;
-  padding=0;
+  margin:0;
+  padding:0;
   box-sizing:border-box;
 }
 
 img {
   max-width: 100%; /* This ensures an image never breaks it's container */
+}
+
+[class*=grid-], [class*=grid_], [class~=grid]{
+  margin:0;
 }
 
 /* ---- GENERAL HELPER CLASSES --------------------------- */
@@ -44,9 +48,9 @@ img {
 
 .mob-show { display: none;}
 
-.background-image {
+/* .background-image {
   background-attachment:fixed;
-}
+} */
 header {
   background-color: grey;
   background-size: cover;
@@ -124,6 +128,9 @@ p{
   padding-top: 3%;
   padding-bottom: 3%;
 }
+a{
+  color:inherit;
+}
 
 h4{
   padding-left: 10%;
@@ -146,14 +153,6 @@ h4{
 
 /*    HEADER CSS     */
 
-.banner-opacity{
-  background: rgba(255,255,255,0.4);
-}
-
-
-
-
-
 .name-logo h1 {
   font-family:'indie flower';
   transform: rotate(-90deg);
@@ -165,8 +164,8 @@ h4{
 }
 
 .name-logo{
-  top:-50px;
-  left:-120px;
+  top:-2%;
+  left:-12%;
   position:fixed;
 }
 .menu-button{
@@ -220,16 +219,21 @@ h4{
 /* END OF CSS FOR SECTION 2 */
 
 /*START OF CSS FOR SECTION 3*/
+.about{
+  text-align:center;
+}
 .bio-photo{
   background-image:url(img/swimming.jpg);
   background-color: grey;
   background-size: cover;
   background-position: center;
+  min-height:40vh;
+  border:2rem solid #fdfdfd;
 }
 
 .col-6_sm-12{
   padding:3%;
-  margin-right:-2rem;
+  /* margin-right:-2rem; */
 }
 
 /*END OF CSS FOR SECTION 3 */
@@ -282,17 +286,14 @@ h4{
 .button:hover {
   background-color: #bec6cc;
   border-color: black;
-  /* color: #333 */
 }
 .button2:hover {
   background-color: #bec6cc;
   border-color: #black;
-  /* color: #333 */
 }
 .button3:hover {
   background-color: #bec6cc;
   border-color: #black;
-  /* color: #333 */
 }
 
 /*footer css*/
@@ -404,13 +405,7 @@ span.highlight{
 .program-options{
   text-align:center;
 }
-/* .program-options-photo{
-  background-image:url(img/torres-del-paine.jpg);
-  background-size:cover;
-  background-position:center;
-  opacity:0.6;
-  background-attachment:fixed;
-} */
+
 .speaking-writing{
   text-align:center;
   background-color:#b5b2b2;
@@ -533,39 +528,44 @@ display: table;
 width: 100%;
 }
 /*TESTIMONIAL PAGE CSS*/
-.testimonial{
-  text-align:center;
-}
 .testimonial-bg{
   text-align:center;
   background-color:#b5b2b2;
   background-size:cover;
 }
+.testimonial-photo1 p,.testimonal-photo2 p, .testimonial-photo3 p, .testimonial-photo4 p{
+  text-align: center;
+  font-style:bold;
+  font-size:1rem;
+}
 .testimonial-photo1{
   background-image:url(img/Runrevel.jpg);
   background-size:cover;
   background-position:center;
-  min-height:100vh;
   background-attachment:fixed;
-  opacity:0.6;
+
 }
+
 .testimonial-photo2{
   background-image:url(img/hummus-platter.jpg);
   background-size:cover;
   background-position:center;
-  min-height:100vh;
   background-attachment:fixed;
-  opacity:0.6;
 }
-.testimonal-bg-photo3{
+.testimonial-photo3{
   background-image:url(img/buying-mango.jpg);
   background-size:cover;
   background-position:center;
+  background-attachment:fixed;
 }
-.testimonal-bg-photo4{
-  background-image:url(img/hiking-bulgaria.jpg);
+.testimonial-photo4{
+  background-image:url(img/calafate.jpg);
   background-size:cover;
   background-position:center;
+  background-attachment:fixed;
+}
+section .overlay{
+  background-color:rgba(250,250,250,0.6)
 }
 /*BLOG CSS*/
 
@@ -581,3 +581,43 @@ width: 100%;
 .sidebar{
   width:30%;
 }
+.blog-preview h1, .blog-preview h3{
+  text-align:center;
+}
+.post-preview{
+  padding:5%;
+}
+.featured-image{
+  min-height:20%;
+  min-width:20%;
+  background-size:cover;
+  background-position:center;
+}
+/* MEDIA QUERIES */
+@media(max-width:1024px){
+
+}/*end media query*/
+@media(max-width:800px){
+  .header h1{
+    font-size:1.5rem;
+  }
+  .name-logo{
+    top:6%;
+    left:-15%;
+  }
+  .name-logo h1{
+    font-size:1rem;
+  }
+} /*end media query*/
+@media(max-width:600px){
+  .banner-heading{
+    font-size:1rem;
+  }/*end media query*/
+  .mob-hide/*mobile hide */{
+    display:none;
+  }
+  .mob-show{
+    display:none;
+} /*end media query*/
+
+ /*visibility:hidden still holds space, but doesn't display whereas display:none gets rid of item and space*/

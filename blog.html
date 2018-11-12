@@ -2,15 +2,15 @@
 layout: default
 Title: Blog
 banner-heading: Blog
-banner-image: img/sunrise.jpg
+banner-image: img/torres-del-paine.jpg
 ---
-<section>
+<section class="blog-preview">
   <h1> Recent Posts </h1>
 
   <div class="grid">
 
     {% for post in site.posts %}
-      <div class="post-preview col-3">
+      <div class="post-preview col-6">
         <h3> {{post.title}} </h3>
         <img src="{{post.featured_image}}"/>
         <p> {{post.description}} </p>
