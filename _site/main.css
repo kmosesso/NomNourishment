@@ -366,6 +366,7 @@ h4{
   background-color: #b5b2b2;
   background-size: cover;
   background-position: center;
+  text-align:center;
 }
 /* SERVICES CSS */
 .coach h1, .speaking-writing h1,.web-development h1{
@@ -566,7 +567,8 @@ width: 100%;
   background-attachment:fixed;
 }
 section .overlay{
-  background-color:rgba(250,250,250,0.6)
+  background-color:rgba(250,250,250,0.6);
+  text-align:center;
 }
 /*BLOG CSS*/
 
@@ -582,11 +584,12 @@ section .overlay{
 .sidebar{
   width:30%;
 }
-.blog-preview h1, .blog-preview h3{
+.blog-preview h1, .blog-preview h3, .blog-preview p {
   text-align:center;
 }
 .post-preview{
   padding:5%;
+  text-align: center;
 }
 .featured-image{
   min-height:20%;
@@ -602,7 +605,8 @@ section .overlay{
 .menu-button{
   max-width:90px;
   max-height:140px;
-  font-size:0.5rem;}
+  font-size:0.5rem;
+}
 .name-logo{
     top:-3%;
     left:-12%;
@@ -625,10 +629,10 @@ section .overlay{
     line-height:0.4em;
     padding-top:20%;
   }
-  .name-logo{
+  /* .name-logo{
     top:-2%;
     left:-12%;
-  }
+  } */
   .menu-button{
     max-width:90px;
     max-height:140px;
@@ -664,11 +668,98 @@ section .overlay{
     margin-left:26%;
   }
 }/*end media query*/
-@media(max-width:400px){
+@media(max-width:430px){
   header.padding-30{
     padding:50%
   }
-
+  .blog{
+    background-attachment:scroll;
+  }
+  .menu-nav a{
+    font-size:40px;
+  }
+  .banner-heading h1{
+    font-size:1rem;
+  }
+  .name-logo{
+    top:3.5%;
+    left:-14%;
+  }
+  .name-logo h1 {
+    font-size: 1.2rem;
+    line-height:0.4em;
+    padding-top:20%;
+  }
+  .menu-button{
+    max-width:70px;
+    max-height:120px;
+    font-size:0.4rem;
+  }
+  .overlay h1{
+    font-size:2rem;
+  }
+  .coach h1, .speaking-writing h1,.web-development h1{
+    font-size:1rem;
+  }
+  .coach h2,.speaking-writing h2,.web-development h2{
+    font-size:1rem;
+  }
+  .coach h3,.speaking-writing h2,.web-development h2{
+    font-size:0.8rem;
+  }
+  .button2{
+    font-size:;
+    width:200px;
+    min-height:100px;
+  }
+  .service-coach h3{
+    font-size:0.8rem;
+  }
+  span.highlight{
+    font-size:1rem;
+  }
+  .bio-photo2{
+    display:none;
+  }
+  .overlay p, .testimonial-bg p{
+    padding-left:15%;
+    padding-right:15%;
+  }
+  .post-preview{
+    padding:10%
+  }
+  .blog-preview h1, .blog-preview h3,{
+    font-size:1rem;
+  }
+  a.post-preview{
+    text-align:center;
+  }
+}/*end media query*/
+@media(max-width:375px){
+  .name-logo{
+    top:6%;
+    left:-14%;
+  }
+  hr{
+    display:none;
+  }
+  div.overlay{
+    min-height:60vh;
+  }
+  header{
+    min-height:100vh;
+  }
+}/*end media query*/
+@media(max-width:325px){
+  .coach h1, .speaking-writing h1,.web-development h1{
+    font-size:0.7rem;
+  }
+  .coach h2,.speaking-writing h2,.web-development h2{
+    font-size:0.5rem;
+  }
+  .coach h3,.speaking-writing h2,.web-development h2{
+    font-size:0.6rem;
+  }
 }
 
 
