@@ -282,7 +282,6 @@ h4{
   align-items: center;
   margin-top:30%;
   margin-left:43%;
-
 }
 .button:hover {
   background-color: #bec6cc;
@@ -555,7 +554,7 @@ width: 100%;
   background-attachment:fixed;
 }
 .testimonial-photo3{
-  background-image:url(img/buying-mango.jpg);
+  background-image:url(img/sunrise.jpg);
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
@@ -759,6 +758,37 @@ section .overlay{
   }
   .coach h3,.speaking-writing h2,.web-development h2{
     font-size:0.6rem;
+  }
+  .name-logo{
+    top:3.5%;
+    left:-14%;
+  }
+  .name-logo h1 {
+    font-size: 1rem;
+    line-height:0.4em;
+    padding-top:20%;
+  }
+  .menu-button{
+    max-width:70px;
+    max-height:120px;
+    font-size:0.4rem;
+  }
+  .button3 {
+    border: 2px solid black;
+    width:150px;
+    min-height:75px;
+    display:flex;
+    margin:auto;
+    justify-content:center;
+    align-items: center;
+    margin-top:30%;
+    margin-left:30%;
+  }
+  .bio-photo{
+    display:none;
+  }
+  .coaching{
+    padding-top:inherit;
   }
 }
 
